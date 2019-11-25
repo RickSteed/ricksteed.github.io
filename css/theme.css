@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script:400,700&display=swap');
+
+
+html, body {
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0; 
+	padding: 0;
+	font-size: 16px;
+	line-height: 1;
+	background: white;
+	font-family: 'Courgette', cursive;
+	color: white;
+}
+
+a {
+	color: white;
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: #d4af37;
+}
+
+a:active {
+	color: blue;
+}
+
+#container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	background-color: #101113;
+}
+/* If Width Larger than 481px */
+@media only screen and (min-width: 481px) {
+	#container {
+		padding: 1.5em;
+	}
+}
+/* If Width Smaller than 480px */
+@media only screen and (max-width: 480px) {
+	#container {
+		padding: 1em 1.5em 1.5em 1.5em;
+	}
+}
+
+#banner {
+	position: relative;
+	align-self: center;
+	box-sizing: border-box;
+	width: 100%;
+	min-width: 640px;
+	max-width: 1000px;
+	text-align: center;
+}
+/* If Width Larger than 481px */
+@media only screen and (min-width: 481px) {
+	#banner {
+		margin: 1em 1em 4em 1em;
+	}
+}
+/* If Width Smaller than 480px */
+@media only screen and (max-width: 480px) {
+	#banner {
+		margin: 0.5em 1em 2.5em 1em;
+	}
+	#logo {
+		width: 280px;
+	}
+}
+
+#main {
+	position: relative;
+	align-self: center;
+	box-sizing: border-box;
+	position: relative;
+	padding: 0;
+	width: 100%;
+	max-width: 1000px;
+	text-align: left;
+}	
+/* If Width Larger than 481px */
+@media only screen and (min-width: 481px) {
+	.main {
+		
+	}
+}
+/* If Width Smaller than 480px */
+@media only screen and (max-width: 480px) {
+	.main {
+		min-width: 640px;
+	}
+}
+
+.album {
+	display: flex;
+	align-content: flex-start;
+	box-sizing: border-box;
+	border-bottom: 1px solid #555;
+	margin: 0 0 3em 0;
+	padding: 0 0 3em 0;
+}
+
+.info {
+	
+}
+
+.cover {
+	width: 100%;
+}
+
+.title {
+	font-family: 'Oleo Script', cursive;
+	font-size: 2em;
+}
+
+.year {
+	font-family: 'Courgette', cursive;
+	padding: 0 0 0 0.3rem;
+	font-size: 1.2rem;
+}
+
+.music {
+
+}
+
+/* Ordered List Number Colors */
+.music ol li:before {
+	color: #777;
+	content: counter(list) ".";
+	left:-32px;
+	position: absolute;
+	text-align: right;
+	width: 26px;
+}
+
+.music ol {
+	margin: 0;
+	padding: 0 0 0 1em;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	line-height: 1.3;
+}
+
+.music ol li {
+	counter-increment: list;
+	list-style-type: none;
+	position: relative;
+	margin: 0;
+	padding: 0.4em 0.1em;
+}
+
+/* If Height Larger than 720px */
+@media only screen and (min-height: 721px) {
+
+}
+/* If Height Larger than 900px */
+@media only screen and (min-height: 901px) {
+
+}
+/* If Height Smaller than 720px */
+@media only screen and (max-height: 720px) {
+
+}
+/* If Width Larger than 481px */
+@media only screen and (min-width: 481px) {
+	.album {
+		flex-direction: row;
+	}
+	.info {
+		max-width: 300px;
+		padding: 0;
+	}
+	.title {
+		font-size: 2em;
+		margin: 0 0 1em 0;
+	}
+	.music {
+		padding: 0em 0em 0em 2.2em;
+	}
+	.music ol {
+		font-size: 1.2em;
+		-webkit-column-gap: 3.5em;
+		-moz-column-gap: 3.5em; 
+		column-gap: 3.5em;
+	}
+}
+/* If Width Smaller than 480px */
+@media only screen and (max-width: 480px) {
+	.album {
+		flex-direction: column;
+	}
+	.info {
+		max-width: 100%;
+		padding: 0 0 1em 0;
+	}
+	.title {
+		font-size: 2em;
+		margin: 0 0 0.6em 0;
+	}
+	.music {
+		padding: 0em 0em 0em 0;
+	}
+	.music ol {
+		font-size: 1.1em;
+		-webkit-column-gap: 2em;
+		-moz-column-gap: 2em; 
+		column-gap: 2m;
+	}
+}
+
+#player {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 2em 0 0 0;
+	background-color: #101113;
+}
+#audio {
+	width: 100%;
+}
+
+#footer {
+	position: relative;
+	align-self: center;
+	margin: 0 0 7em 0;
+	text-align: center;
+}
