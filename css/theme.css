@@ -3,15 +3,20 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script:400,700&display=swap');
 
-
+html {
+	background: #101113 url("../images/bg.jpg") center center;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 html, body {
 	box-sizing: border-box;
 	height: 100%;
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	line-height: 1;
-	background: white;
 	font-family: 'Courgette', cursive;
 	color: white;
 }
@@ -35,7 +40,11 @@ a:hover {
 }
 
 a:active {
-	color: blue;
+	color:  #85929e;
+}
+
+.bulletspacer {
+	padding: 0 0.5em;
 }
 
 #container {
@@ -46,7 +55,6 @@ a:active {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0;
-	background-color: #101113;
 }
 /* If Width Larger than 481px */
 @media only screen and (min-width: 481px) {
@@ -95,11 +103,11 @@ a:active {
 	width: 100%;
 	max-width: 1000px;
 	text-align: left;
-}	
+}
 /* If Width Larger than 481px */
 @media only screen and (min-width: 481px) {
 	.main {
-		
+
 	}
 }
 /* If Width Smaller than 480px */
@@ -119,7 +127,7 @@ a:active {
 }
 
 .info {
-	
+
 }
 
 .cover {
@@ -165,7 +173,6 @@ a:active {
 	list-style-type: none;
 	position: relative;
 	margin: 0;
-	padding: 0.4em 0.1em;
 }
 
 /* If Height Larger than 720px */
@@ -199,8 +206,11 @@ a:active {
 	.music ol {
 		font-size: 1.2em;
 		-webkit-column-gap: 3.5em;
-		-moz-column-gap: 3.5em; 
+		-moz-column-gap: 3.5em;
 		column-gap: 3.5em;
+	}
+	.music ol li {
+		padding: 0.4em 0.1em;
 	}
 }
 /* If Width Smaller than 480px */
@@ -217,22 +227,28 @@ a:active {
 		margin: 0 0 0.6em 0;
 	}
 	.music {
-		padding: 0em 0em 0em 0;
+		padding: 0;
 	}
 	.music ol {
-		font-size: 1.1em;
+		font-size: 1em;
 		-webkit-column-gap: 2em;
-		-moz-column-gap: 2em; 
+		-moz-column-gap: 2em;
 		column-gap: 2m;
+	}
+	.music ol li {
+		padding: 0.5em 0.1em;
 	}
 }
 
 #player {
+	box-sizing: border-box;
 	position: fixed;
 	bottom: 0;
+	left: 0;
 	width: 100%;
+	max-width: 100%;
 	margin: 0;
-	padding: 2em 0 0 0;
+	padding: 0;
 	background-color: #101113;
 }
 #audio {
@@ -242,6 +258,6 @@ a:active {
 #footer {
 	position: relative;
 	align-self: center;
-	margin: 0 0 7em 0;
+	margin: 0 0 6.5em 0;
 	text-align: center;
 }
