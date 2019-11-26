@@ -2,11 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	
+
 	<!-- Google Analytics -->
 	<script>
 	</script>
-	
+
 	<!-- Metadata -->
     <title>Rick Steed Music</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +21,10 @@
 
     <!-- Icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-	
+
 	<!-- Theme -->
 	<link href="css/theme.css" rel="stylesheet" type="text/css" />
-	
+
 	<style>
 
 	</style>
@@ -32,20 +32,20 @@
 <body>
 
 	<div id="container">
-	
+
 		<div id="banner">
 			<img id="logo" src="images/logo.png" />
 		</div>
-		
+
 		<div id="main">
-		
+
 			<!-- Remastered -->
 			<!--<div class="album">
-			
+
 				<div class="info">
 					<img src="music/Remastered/cover.jpg" class="cover"/>
 				</div>
-			
+
 				<div class="music">
 					<div class="title">
 						Remastered <span class="year">2019</span>
@@ -58,14 +58,14 @@
 					</ol>
 				</div>
 			</div>-->
-			
+
 			<!-- Begin -->
 			<div class="album">
-			
+
 				<div class="info">
 					<img src="music/Begin/cover.jpg" class="cover"/>
 				</div>
-			
+
 				<div class="music">
 					<div class="title">
 						Begin <span class="year">2012</span>
@@ -83,14 +83,14 @@
 					</ol>
 				</div>
 			</div>
-			
+
 			<!-- Dryspell -->
 			<div class="album">
-			
+
 				<div class="info">
 					<img src="music/Dryspell/cover.jpg" class="cover"/>
 				</div>
-			
+
 				<div class="music">
 					<div class="title">
 						Dryspell <span class="year">2009</span>
@@ -109,14 +109,14 @@
 					</ol>
 				</div>
 			</div>
-			
+
 			<!-- The Lost Tapes -->
 			<div class="album">
-			
+
 				<div class="info">
 					<img src="music/The_Lost_Tapes/cover.jpg" class="cover"/>
 				</div>
-			
+
 				<div class="music">
 					<div class="title">
 						The Lost Tapes
@@ -131,19 +131,22 @@
 					</ol>
 				</div>
 			</div>
-			
+
 		</div>
-		
+
 		<div id="footer">
 			© 2006-<span id="copyrightYear"></span> Rick Steed
-		</div>
-		
+			<span class="bulletspacer"> ♪ </span>
+			<a href="https://github.com/MattMcManis" target="_blank">Design</a>
+			<span class="bulletspacer"> ♫ </span>
+			<a href="https://www.flickr.com/photos/philippe/25441658/" target="_blank">Background</a>
+
 	</div>
-	
+
 	<div id="player">
 		<audio id="audio" controls>
 			<source id="source" src="" type="audio/mp3">
-		</audio> 
+		</audio>
 	</div>
 
 <!-- Scripts -->
@@ -151,19 +154,19 @@
 	//remastered.onclick = function(e) {
 	//	Play(e);
 	//};
-	
+
 	begin.onclick = function(e) {
 		Play(e);
 	};
-	
+
 	dryspell.onclick = function(e) {
 		Play(e);
 	};
-	
+
 	theLostTapes.onclick = function(e) {
 		Play(e);
 	};
-	
+
 	function Play(e) {
 	  e.preventDefault();
 
@@ -174,9 +177,9 @@
 	  source.src = elm.getAttribute('data-value');
 
 	  audio.load(); //call this to just preload the audio without playing
-	  audio.play(); //call this to play the song right away	
+	  audio.play(); //call this to play the song right away
 	}
-	
+
 	// Get Copyright Current Year
 	document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
 </script>
