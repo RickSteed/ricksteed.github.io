@@ -126,10 +126,6 @@ a:active {
 	padding: 0 0 3em 0;
 }
 
-.info {
-
-}
-
 .cover {
 	width: 100%;
 }
@@ -143,10 +139,6 @@ a:active {
 	font-family: 'Courgette', cursive;
 	padding: 0 0 0 0.3rem;
 	font-size: 1.2rem;
-}
-
-.music {
-
 }
 
 /* Ordered List Number Colors */
@@ -175,18 +167,6 @@ a:active {
 	margin: 0;
 }
 
-/* If Height Larger than 720px */
-@media only screen and (min-height: 721px) {
-
-}
-/* If Height Larger than 900px */
-@media only screen and (min-height: 901px) {
-
-}
-/* If Height Smaller than 720px */
-@media only screen and (max-height: 720px) {
-
-}
 /* If Width Larger than 481px */
 @media only screen and (min-width: 481px) {
 	.album {
