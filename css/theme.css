@@ -203,6 +203,35 @@ a:active {
 		padding: 0.4em 0.1em;
 	}
 }
+
+/* If Width Smaller than 720px */
+@media only screen and (max-width: 720px) {
+	.info {
+	    max-width: 250px;
+	    padding: 0;
+	}
+	.music ol {
+	    font-size: 1.1em;
+	    -webkit-column-gap: 2.2em;
+	    -moz-column-gap: 2.2em;
+	    column-gap: 2.2em;
+	}
+}
+
+/* If Width Smaller than 640px */
+@media only screen and (max-width: 640px) {
+	.info {
+	    max-width: 230px;
+	    padding: 0;
+	}
+	.music ol {
+	    font-size: 1.05em;
+	    -webkit-column-gap: 2em;
+	    -moz-column-gap: 2em;
+	    column-gap: 2em;
+	}
+}
+
 /* If Width Smaller than 480px */
 @media only screen and (max-width: 480px) {
 	.album {
